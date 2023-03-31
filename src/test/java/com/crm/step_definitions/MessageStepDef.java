@@ -47,7 +47,7 @@ Crm_ActivityStreamPage crm_activityStreamPage = new Crm_ActivityStreamPage();
         BrowserUtils.waitFor(3);
 
 
-    Driver.getDriver().findElement(By.xpath("//body")).sendKeys("Text2");
+    Driver.getDriver().findElement(By.xpath("//body")).sendKeys("Text4");
 
         //driverPool.switchTo().frame(crm_activityStreamPage.textBox2);
         //"bx-editor-iframe");
@@ -84,9 +84,11 @@ crm_activityStreamPage.saveButton.click();
     @Then("User sees own message")
     public void user_sees_own_message() {
         String expectedText = crm_activityStreamPage.lastInsertedText.getText();
-        String actualText = "Text2";
+        String actualText = "Text4";
 
         Assert.assertEquals(expectedText,actualText);
+
+        Driver.closeDriver();
 
     }
 }

@@ -11,7 +11,7 @@ Feature: Send a message
 
 @AGL-404
     Scenario: Upload a file
-      Given User is CRM activity stream page
+      Given User is CRM activity stream page to upload a file
       When User clicks Upload files button
       And User sees Upload files send images and selects files
       Then User clicks send button and uploads own files
