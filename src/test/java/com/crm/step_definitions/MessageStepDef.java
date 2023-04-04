@@ -66,7 +66,7 @@ Crm_ActivityStreamPage crm_activityStreamPage = new Crm_ActivityStreamPage();
        //crm_activityStreamPage.messageText.sendKeys("Text");
         ////*[@id="bx-html-editor-iframe-cnt-idPostFormLHE_blogPostForm"]/iframe
 //crm_activityStreamPage.textBox4.click();
-        //BrowserUtils.waitFor(3);
+        //BrowserUtils.waitFor(2);
 
         //crm_activityStreamPage.textMessage.sendKeys("txt");
 
